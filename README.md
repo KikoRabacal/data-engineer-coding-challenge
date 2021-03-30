@@ -29,7 +29,7 @@ Read fraud.zip and store the data into an SQL database.
 
 Sanitise the data of both transaction-001.zip and transaction-002.zip by removing transactions where column `credit_card_number` is not part of the previous provided list.
 
-example: a credit card that start with `98` is not a valid card, it should be discarded from the sanitised dataset.
+**Example**: a credit card that starts with `98` is not a valid card, it should be discarded from the sanitised dataset.
  
 ## Part 4
 
