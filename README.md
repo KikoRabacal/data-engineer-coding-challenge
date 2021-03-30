@@ -1,6 +1,6 @@
 # Coding Challenge
 
-In this challenge you are required to do some analysis on the datasets provided and write unit tests. Integration tests are a bonus but not required. Python should be the language of choice.
+In this challenge you are required to do some analysis on the datasets provided and write unit tests. Integration tests are a bonus but not required. Python should be the language of choice but you are free to use any other language you are familiar with.
 
 ## Credit Card Vendor Mapping 
 In later parts of this project you will need this mapping of credit_card_vendor to list of card prefix.
@@ -19,7 +19,7 @@ jcb15 = ['2131', '1800']
 
 ## Part 1
 
-Setup a git project that you can push to Github or other provider of your choice. We would like to see code written in PySpark ideally but if you have a preference use the framework of your choice.
+Setup a git project that you can push to Github or other provider of your choice. We would like to see clean code and a well structured project using a framework of your choice.
 
 ## Part 2
 
@@ -27,14 +27,14 @@ Read fraud.zip and store the data into an SQL database.
 
 ## Part 3
 
-Using PySpark, sanitize data of both transaction-001.zip and transaction-002.zip by removing transactions where column `credit_card_number` is not part of the previous provided list.
+Sanitise the data of both transaction-001.zip and transaction-002.zip by removing transactions where column `credit_card_number` is not part of the previous provided list.
 
-example: a credit card that start with `98` is not a valid card, it should be discarded from the sanitized dataset.
+example: a credit card that start with `98` is not a valid card, it should be discarded from the sanitised dataset.
  
 ## Part 4
 
-- Going forward, only the sanitized dataset should be used
-- Find in the sanitized dataset if it contains fraudulent transactions (from fraud.zip) and report their number
+- Going forward, only the sanitised dataset should be used
+- Find in the sanitised dataset if it contains fraudulent transactions (from fraud.zip) and report their number
 - Create a report of the number of fraudulent transactions per state
 - Create a report of the number of fraudulent transactions per card vendor, eg: maestro => 45, amex => 78, etc..
 - Create a report of the number of fraudulent transactions per card vendor, eg: maestro => 45, amex => 78, etc..
