@@ -19,7 +19,7 @@ jcb15 = ['2131', '1800']
 
 ## Part 1
 
-Setup a git project that you can push to Github or other provider of your choice. We would like to see clean code and a well structured project using a framework of your choice.
+Setup a git project that you can push to Github or other provider of your choice. We would like to see clean code and a well structured project using a framework of your choice. You will also need to provide a working set of functions or function, that we can execute to reproduce your results.  
 
 ## Part 2
 
