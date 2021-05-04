@@ -27,18 +27,12 @@ if __name__ == '__main__':
     from sanitised_transactions
     """
     query_results = pg_connection.execute_query_full(query_txt=query)
-
     # Save query results to a json file
-    results_dict = {}
-    entry = 1
-    for tupl in query_results:
-        results_dict.update({entry: {"col1": tupl[0], "col2": tupl[1], "col3": tupl[2]}})
-        entry += 1
     with open(Path(path_for_results_files, "query_results.json"), mode="w") as write_file:
-        json.dump(results_dict, write_file)
+        json.dump(query_results, write_file)
     # Save query results to binary file
     with open(Path(path_for_results_files, "query_results.bin"), mode="wb") as write_file:
-        write_file.write(json.dumps(results_dict).encode())
+        write_file.write(json.dumps(query_results).encode())
 
     # Closing the Postgres connections
     if pg_connection.conn:

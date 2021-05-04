@@ -3,6 +3,7 @@ import sys
 
 import pandas as pd
 import psycopg2
+from psycopg2.extras import RealDictCursor
 import logging
 
 
@@ -61,7 +62,7 @@ class Postgres:
         :param query_txt: the SQL SELECT query that will return the data of
         interest
         """
-        cursor = self.conn.cursor()
+        cursor = self.conn.cursor(cursor_factory=RealDictCursor)
         cursor.execute(query_txt)
         result = cursor.fetchall()
         cursor.close()
