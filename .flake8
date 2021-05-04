@@ -1,0 +1,19 @@
+[flake8]
+max-line-length = 120
+mypy-init-return = True
+
+# Ignore:
+#   ANN101 Missing type annotation for self in method
+#   ANN003 Missing type annotation for **kwargs
+#   ANN204 Missing return type annotation for special method
+#   D100 Missing docstring in public module - main module doesn't need docstring (readme sorts that one out)
+#   D105 Missing docstring in magic method
+#   I201 Missing newline between import groups. - too annoying
+#   D400 First line should end with a period. - too annoying
+#   D401 Imperative mood. - too annoying
+ignore=ANN101,ANN003,ANN204,D100,D105,I201,D400,D401,D205
+
+
+# Ignore for tests:
+per-file-ignores =
+    tests/*: ANN001,D205

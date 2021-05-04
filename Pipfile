@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psycopg2-binary = "*"
+pandas = "*"
+pyyaml = "*"
+pytest = "*"
+
+[dev-packages]
+flake8 = "*"
+flake8-annotations = "*"
+flake8-docstrings = "*"
+
+[requires]
+python_version = "3.9"
