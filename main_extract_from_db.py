@@ -25,7 +25,6 @@ if __name__ == '__main__':
         state 																							as state,
         octet_length(LEFT(credit_card_number,LENGTH(credit_card_number)-9)||'*********'||ipv4||state) 	as no_bytes
     from sanitised_transactions
-    LIMIT 10
     """
     query_results = pg_connection.execute_query_full(query_txt=query)
 
